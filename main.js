@@ -44,3 +44,38 @@ function my_keydown(e){
      console.log("right");
  }
 }
+function up(){
+if (rover_y >= 0){
+   rover_y = rover_y - 5 ; 
+   console.log("when up arrow is pressed , X = " + rover_x + " Y = " + rover_y);
+   uploadbg();
+   uploadrover();
+}
+}
+
+function down(){
+    if (rover_y <= 410){
+        rover_y = rover_y + 5 ; 
+        console.log("when down arrow is pressed , X = " + rover_x + " Y = " + rover_y);
+        uploadbg();
+        uploadrover();
+    }
+}
+
+ function left(){
+     if (rover_x >= 0){
+       rover_x = rover_x - 5 ; 
+       console.log("when left arrow is pressed , X = " + rover_x + " Y = " + rover_y);
+       uploadbg();
+       uploadrover();  
+     }
+ }
+  
+ function right(){
+     if (rover_x <= 600){
+         rover_x = rover_x + 5 ; 
+         console.log("when right arrow is pressed  , X = " + rover_x + "Y = " + rover_y);
+         uploadbg();
+         uploadrover();
+     }
+ } 
